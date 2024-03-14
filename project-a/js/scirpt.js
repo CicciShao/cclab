@@ -11,7 +11,7 @@ let ra1, ra2, ra3, ra4;
 
 function setup() {
     let canvas = createCanvas(800, 500);
-    canvas.parent("p5-canvas-container");
+    canvas.parent("p5-canvas-container")
 
     dia1 = random(80, 100);
     dia2 = random(80, 100);
@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-    background(255, 240, 219, 30);
+    background(40, 55, 71, 30);
     //text("set me free and wake up", 20, 30);
     console.log(frameCount);
 
@@ -41,33 +41,58 @@ function draw() {
     circle(0, 500, ra1);
     if (mouseIsPressed == true) {
         ra1 = cosValue * random(150, 200);
+    } else if (mouseX < 750 && mouseX > 550 && mouseY < 450 && mouseY > 50) { ra1 = cosValue * 200 }
+    else {
+        ra1 = cosValue * 80;
+    }
+    let distance1 = dist(mouseX, mouseY, 0, 500);
+    if (distance1 < 50) {
+        // in
+        ra1 = 150;
     } else {
-        ra1 = cosValue * 100;
+        // out
     }
 
     circle(450, 150, ra2);
     if (mouseIsPressed == true) {
         ra2 = cosValue * random(120, 160);
-    } else {
+    } else if (mouseX < 750 && mouseX > 550 && mouseY < 450 && mouseY > 50) { ra2 = cosValue * 150 }
+    else {
         ra2 = cosValue * 80;
+    }
+    let distance2 = dist(mouseX, mouseY, 450, 150);
+    if (distance2 < 50) {
+        // in
+        ra2 = 150;
+    } else {
+        // out
     }
 
     circle(100, 100, ra3);
     if (mouseIsPressed == true) {
         ra3 = cosValue * random(100, 200);
-    } else {
+    }
+    else if (mouseX < 750 && mouseX > 550 && mouseY < 450 && mouseY > 50) { ra3 = cosValue * 150 } else {
         ra3 = cosValue * 50;
+    }
+    let distance3 = dist(mouseX, mouseY, 100, 100);
+    if (distance3 < 30) {
+        // in
+        ra3 = 150;
+    } else {
+        // out
     }
 
     circle(400, 350, ra4);
 
     if (mouseIsPressed == true) {
         ra4 = cosValue * random(180, 220);
-    } else {
-        ra4 = cosValue * 200;
     }
-    let distance = dist(mouseX, mouseY, 400, 350);
-    if (distance < 50) {
+    else if (mouseX < 750 && mouseX > 550 && mouseY < 450 && mouseY > 50) { ra4 = cosValue * 200 } else {
+        ra4 = cosValue * 150;
+    }
+    let distance4 = dist(mouseX, mouseY, 400, 350);
+    if (distance4 < 50) {
         // in
         ra4 = 250;
     } else {
@@ -115,15 +140,21 @@ function draw() {
         }
         scale(0.5);
         translate(150, 0);
-        rotate(frameCount * 0.01);
+        if (distance1 < 50 || distance2 < 50 || distance3 < 30 || distance4 < 50) {
+            rotate(frameCount * 0.1)
+        } else {
+            rotate(frameCount * 0.01);
+        }
+
         ellipse(0, 0, 100, 50);
         ellipse(100, 0, 30, 20);
         ellipse(150, 0, 10, 10);
 
-        fill(255, 100);
+        fill(244, 208, 63, 100);
         ellipse(110, 0, 50, 10);
-        fill(255, 255, 0, 50);
+        fill(109, 255, 237, 50);
         ellipse(130, 100, 20, 100);
+        fill(109, 255, 237)
         ellipse(180, 0, 100, 10);
         rect(200, 10, 50, 50);
 
