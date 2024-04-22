@@ -1,0 +1,25 @@
+.polaroid {
+    display: flex;
+    /* 使用 Flexbox 布局 */
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: space-around;
+    /* 内部元素平均分布 */
+    width: 100%;
+    /* 可根据需要调整 */
+
+}
+
+.polaroid p {
+    flex: 1;
+    /* 让所有 <p> 元素平分父容器宽度 */
+    margin: 0;
+    /* 清除默认的外边距 */
+    text-align: center;
+    /* 文字水平居中 */
+}
+
+.decoration {
+    display: flex;
+    flex-direction: column;
+}
