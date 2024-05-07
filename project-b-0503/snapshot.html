@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Jersey+10&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/lib/p5.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="p5-canvas-container" class="camera" sytle: width="1600px" height="1200px">
+        </div>
+
+
+        <div class="stickerPack">
+            <div class="sticker" id="sticker1">
+                <img src="image/sticker1.png" width="150px" alt="1111" onclick="changeSticker(0)">
+            </div>
+
+            <div class="sticker" id="sticker2">
+                <img src="image/sticker2.png" width="150px" alt="1111" onclick="changeSticker(1)">
+            </div>
+
+            <div class="sticker" id="sticker3">
+                <img src="image/sticker3.png" width="150px" alt="1111" onclick="changeSticker(2)">
+            </div>
+
+            <div class="sticker" id="sticker4">
+                <img src="image/sticker4.png" width="150px" alt="1111" onclick="changeSticker(3)">
+            </div>
+
+            <div class="sticker" id="sticker5">
+                <img src="image/sticker5.png" width="150px" alt="1111" onclick="changeSticker(4)">
+            </div>
+
+            <div class="sticker" id="sticker6">
+                <img src="image/sticker6.png" width="150px" alt="1111" onclick="changeSticker(5)">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <div class="polaroid">
+
+        <div class="decoration">
+            <img src="image/heart1.png" width="150px" alt="1111">
+            <img src="image/sticker2.png" width="150px" alt="1111">
+            <img src="image/pic.jpg" width="150px" alt="1111">
+            <img src="image/pic.jpg" width="150px" alt="1111">
+            <img src="image/pic.jpg" width="150px" alt="1111">
+        </div>
+
+        <div id="canvasContainer"></div>
+
+
+        <div class="decoration">
+            <img src="image/pic.jpg" width="150px" alt="1111">
+            <img src="image/pic.jpg" width="150px" alt="1111">
+            <img src="image/pic.jpg" width="150px" alt="1111">
+            <img src="image/pic.jpg" width="150px" alt="1111">
+            <img src="image/pic.jpg" width="150px" alt="1111">
+        </div>
+    </div>
+
+    <button id="startbutton" onclick="window.location.href='h2.html'">next</button> -->
+
+
+    <div class="buttonPack">
+        <div class="button" id="returnButton">
+            <a href="index.html">return</a>
+        </div>
+
+
+        <div class="button" id="introButton">
+            <a href="intro.html">introduction</a>
+        </div>
+
+        <div class="button" id="photoButton" onclick="setPhotoMode()">
+            Take a photo!
+        </div>
+
+        <div class="button" id="catureButton" onclick="setStickerMode()">
+            Add Stickers!
+        </div>
+
+        <div class="button" id="exportButton" onclick="">
+            redo
+        </div>
+
+        <div class="button" id="exportButton">
+            export
+        </div>
+
+
+
+        <!-- <div id="returnbutton">
+            <a href="index.html">return</a>
+        </div> -->
+
+        <!-- <button id="sticker2" onclick="applyDeco()">
+            <img src="image/sticker2.png" width="150px" alt="1111">
+        </button> -->
+
+        <!-- <button id="capture" onclick="setStickerMode()">
+            Sticker Mode!
+        </button> -->
+
+        <!-- onClick="changeSticker(0)" -->
+
+        <!-- <div id="export">
+        <a>export</a>
+    </div> -->
+
+
+    </div>
+
+
+    <script src="js/snapshot.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+.polaroid {
+    display: flex;
+    /* 使用 Flexbox 布局 */
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: space-around;
+    /* 内部元素平均分布 */
+    width: 100%;
+    /* 可根据需要调整 */
+
+}
+
+.polaroid p {
+    flex: 1;
+    /* 让所有 <p> 元素平分父容器宽度 */
+    margin: 0;
+    /* 清除默认的外边距 */
+    text-align: center;
+    /* 文字水平居中 */
+}
+
+.decoration {
+    display: flex;
+    flex-direction: column;
+}
+
+#startbutton {
+    background-color: red;
+    width: 12%;
+    text-align: center;
+    position: absolute;
+    top: 86%;
+    transform: translate(270%, 20%);
+    color: darksalmon;
+    font-size: 30px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+#returnbutton {
+    background-color: aqua;
+    width: 12%;
+    text-align: center;
+    position: absolute;
+    top: 86%;
+    transform: translate(150%, 20%);
+    color: darksalmon;
+    font-size: 30px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+#capture {
+    background-color: aqua;
+    width: 12%;
+    text-align: center;
+    position: absolute;
+    top: 86%;
+    transform: translate(390%, 20%);
+    color: darksalmon;
+    font-size: 30px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+#export {
+    background-color: red;
+    width: 12%;
+    text-align: center;
+    position: absolute;
+    top: 86%;
+    transform: translate(510%, 20%);
+    color: darksalmon;
+    font-size: 30px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+#intro {
+    background-color: red;
+    width: 12%;
+    text-align: center;
+    position: absolute;
+    top: 3%;
+    transform: translate(130%, 0%);
+    color: darksalmon;
+    font-size: 30px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+#sticker2 {}

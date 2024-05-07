@@ -1,0 +1,200 @@
+html,
+body {
+  height: 100%;
+  /* background-color: red; */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#canvasContainer {
+  display: block;
+}
+
+.buttonPack {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  font-family: "Jersey 10", sans-serif;
+  font-size: large;
+  padding: 10px;
+  background-color: rgb(249, 221, 141);
+  color: rgb(167, 105, 14);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 170px
+}
+
+
+#bigTitle {
+  color: darksalmon;
+  font-size: 250px;
+  font-family: "Jersey 10", sans-serif;
+  background-color: none;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 200px;
+}
+
+h1 {
+  font-size: 40px;
+  color: whitesmoke;
+  font-family: "Jersey 10", sans-serif;
+  text-align: center;
+  line-height: 3;
+}
+
+h1 {
+  font-size: 40px;
+  /* 修改字体大小为 24 像素 */
+}
+
+#startbutton {
+  background-color: none;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  transform: translate(0, 20%);
+  color: darksalmon;
+  font-size: 100px;
+  font-family: "Jersey 10", sans-serif;
+}
+
+/* #returnbutton {
+  background-color: aqua;
+  width: 12%;
+  text-align: center;
+  position: absolute;
+  top: 86%;
+  transform: translate(150%, 20%);
+  color: darksalmon;
+  font-size: 30px;
+  font-family: "Jersey 10", sans-serif;
+} */
+
+/* #returnbutton {
+  background-color: none;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, 20%);
+  color: darksalmon;
+  font-size: 100px;
+  font-family: "Jersey 10", sans-serif;
+} */
+
+.camera {
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  align-items: center;
+  /* 垂直居中 */
+  justify-content: space-around;
+  /* 内部元素平均分布 */
+  width: 100%;
+  /* 可根据需要调整 */
+
+}
+
+.stickerPack {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.decoration {
+  display: flex;
+  flex-direction: column;
+}
+
+#capture {
+  background-color: aqua;
+  width: 12%;
+  text-align: center;
+  position: absolute;
+  top: 86%;
+  transform: translate(390%, 20%);
+  color: darksalmon;
+  font-size: 30px;
+  font-family: "Jersey 10", sans-serif;
+}
+
+#export {
+  background-color: red;
+  width: 12%;
+  text-align: center;
+  position: absolute;
+  top: 86%;
+  transform: translate(510%, 20%);
+  color: darksalmon;
+  font-size: 30px;
+  font-family: "Jersey 10", sans-serif;
+}
+
+#intro {
+  /* background-color: red; */
+  width: 12%;
+  text-align: center;
+  position: absolute;
+  top: 3%;
+  transform: translate(130%, 0%);
+  color: darksalmon;
+  font-size: 30px;
+  font-family: "Jersey 10", sans-serif;
+}
+
+
+
+/* 鼠标悬停在按钮上时，改变按钮背景色 */
+.button:hover {
+  background-color: lightgray;
+  color: black;
+  /* 修改按钮文字颜色 */
+  transform: scale(1.1);
+}
+
+.sticker img {
+  transition: transform 0.1s;
+  /* 添加过渡效果 */
+}
+
+/* 鼠标悬停在图像上时，将图像放大 1.1 倍 */
+.sticker img:hover {
+  transform: scale(1.3);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+}
+
+.button-text-no-underline {
+  text-decoration: none !important;
+  /* 去除链接下划线 */
+}
+
+.button-text {
+  color: inherit !important;
+  /* 继承父元素的颜色 */
+}

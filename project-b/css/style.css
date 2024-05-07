@@ -1,0 +1,149 @@
+html,
+body {
+  height: 100%;
+  /* background-color: red; */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#canvasContainer {
+  display: block;
+}
+
+#bigTitle {
+  color: darksalmon;
+  font-size: 250px;
+  font-family: "Jersey 10", sans-serif;
+  background-color: none;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 200px;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+  font-family: "Jersey 10", sans-serif;
+}
+
+#startbutton {
+  background-color: none;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  transform: translate(0, 20%);
+  color: darksalmon;
+  font-size: 100px;
+  font-family: "Jersey 10", sans-serif;
+}
+
+#returnbutton {
+  background-color: aqua;
+  width: 12%;
+  text-align: center;
+  position: absolute;
+  top: 86%;
+  transform: translate(150%, 20%);
+  color: darksalmon;
+  font-size: 30px;
+  font-family: "Jersey 10", sans-serif;
+}
+
+/* #returnbutton {
+  background-color: none;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, 20%);
+  color: darksalmon;
+  font-size: 100px;
+  font-family: "Jersey 10", sans-serif;
+} */
+
+.polaroid {
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  align-items: center;
+  /* 垂直居中 */
+  justify-content: space-around;
+  /* 内部元素平均分布 */
+  width: 100%;
+  /* 可根据需要调整 */
+
+}
+
+.polaroid p {
+  flex: 1;
+  /* 让所有 <p> 元素平分父容器宽度 */
+  margin: 0;
+  /* 清除默认的外边距 */
+  text-align: center;
+  /* 文字水平居中 */
+}
+
+.decoration {
+  display: flex;
+  flex-direction: column;
+}
+
+#capture {
+  background-color: aqua;
+  width: 12%;
+  text-align: center;
+  position: absolute;
+  top: 86%;
+  transform: translate(390%, 20%);
+  color: darksalmon;
+  font-size: 30px;
+  font-family: "Jersey 10", sans-serif;
+}
+
+#export {
+  background-color: red;
+  width: 12%;
+  text-align: center;
+  position: absolute;
+  top: 86%;
+  transform: translate(510%, 20%);
+  color: darksalmon;
+  font-size: 30px;
+  font-family: "Jersey 10", sans-serif;
+}
+
+#intro {
+  /* background-color: red; */
+  width: 12%;
+  text-align: center;
+  position: absolute;
+  top: 3%;
+  transform: translate(130%, 0%);
+  color: darksalmon;
+  font-size: 30px;
+  font-family: "Jersey 10", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  /* 修改字体大小为 24 像素 */
+}
+
+#sticker2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
